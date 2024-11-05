@@ -1,4 +1,15 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automerge": true,
+  "automergeStrategy": "squash",
+  "automergeType": "pr",
+  "packageRules": [
+    {
+      "matchManagers": ["custom.elastic"],
+      "enabled": true,
+      "groupName": "elastic"
+    }
+  ],
   "customManagers": [
     {
       "customType": "regex",
