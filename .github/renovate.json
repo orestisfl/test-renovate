@@ -13,7 +13,7 @@
     "elastic": {
       "defaultRegistryUrlTemplate": "https://artifacts-api.elastic.co/v1/versions",
       "transformTemplates": [
-        "{\"releases\":[{\"version\": versions[$split($, '.')[0] = '8'][-1])}]}"
+        "{\"releases\":[{\"version\": versions[$split($, '.')[0] = '8'][-1]}]}"
       ]
     }
   }
