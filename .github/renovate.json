@@ -1,0 +1,20 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["elastic.version"],
+      "matchStrings": ["(?<currentValue>\\S+)"],
+      "depNameTemplate": "elastic",
+      "versioningTemplate": "semver-coerced",
+      "datasourceTemplate": "custom.elastic"
+    }
+  ],
+  "customDatasources": {
+    "elastic": {
+      "defaultRegistryUrlTemplate": "https://artifacts-api.elastic.co/v1/versions",
+      "transformTemplates": [
+        "{\"releases\":[{\"version\": versions[$split($, '.')[0] = '8'][-1])}]}"
+      ]
+    }
+  }
+}
