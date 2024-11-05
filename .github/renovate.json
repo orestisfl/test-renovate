@@ -16,7 +16,6 @@
       "fileMatch": ["elastic.version"],
       "matchStrings": ["(?<currentValue>\\S+)"],
       "depNameTemplate": "elastic",
-      "versioningTemplate": "semver-coerced",
       "datasourceTemplate": "custom.elastic"
     }
   ],
