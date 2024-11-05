@@ -5,7 +5,7 @@
   "automergeType": "pr",
   "packageRules": [
     {
-      "matchManagers": ["custom.elastic"],
+      "matchDatasources": ["custom.elastic"],
       "enabled": true,
       "groupName": "elastic"
     }
